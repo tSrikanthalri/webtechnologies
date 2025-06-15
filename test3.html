@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *
+    {
+        margin:0px;
+
+    }
+    nav
+    {
+        background:linear-gradient(45deg,darkslategray,red);
+        padding:20px;
+    }
+    #card-section
+    {
+        margin-top:20px;
+    }
+    .card
+    {
+        box-shadow:0 0 10px rgb(136,240,123);
+        margin:30px;
+        width:240px;
+        height:180px;
+        border-radius:20px 20px 0px 0px;
+    }
+    .card-data
+    {
+        margin-top:8px;
+        text-align:center;
+    }
+    .fa
+    {
+        color:white;
+        border-radius:100%;
+    }
+    .fa:hover
+    {
+       cursor:pointer;
+    }
+    #minus
+    {
+        color:red;
+    }
+    #plus
+    {
+        color:green;
+    }
+</style>
+  
+ <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css">
+
+</head>
+<body>
+    <nav>
+      <h1>R C B </h1>
+
+    </nav>
+        
+    <section id="card-section">
+         <div class="card-parent">
+            <div class="card">
+                <img src="https://tse2.mm.bing.net/th?id=OIF.%2f3InxmKHykVtNikGnGWGwg&pid=Api&P=0&h=180">
+               <div class="card-data">
+                   <h2 class="text-color-red">Virat Kholi</h2>
+                   <p>18</p>
+
+                   <h2 style="margin-top:10px;">
+
+                    <i class="fa fa-miuns-circle" id="minud" onclick="decQty()"></i>
+                    <span id="qty-ele"></span>
+                    <i class="fa fa-plus-circle" id="minud" onclick="incQty()"></i>
+                   </h2>
+                  
+               </div>
+            </div>
+
+         </div>
+    </section>
+    <footer style="margin-bottom:500px"></footer>
+</body>
+</html>

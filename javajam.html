@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+    display:flex;
+    min-height:90vh
+}
+.sidebar{
+    background-color: #3e2c23;
+    color:white;
+    width:200px;
+    padding:20px;
+}
+.sidebar .logo{
+    width:100%;
+    margin-bottom:20px;
+.body{
+    font-family:Arial, sans-serif;
+    margin:0;
+    background-color: #fdf6e3;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding:0;
+}
+.sidebar li{
+    margin:10px 0;
+}
+.sidebar a{
+    color:white;
+    text-decoration: none;
+}
+.content{
+    flex-grow:1;
+    padding:20px;
+    background:#3e2c23;
+}
+.h1{
+    color:#3e2c23;
+}
+.form{
+    margin-top:20px;
+}
+.label{
+    display:block;
+    margin:10px;
+}
+.input[type="submit"]{
+    margin-top: 15px;
+    padding:10px 20px;
+    background-color: #3e2c23;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+.input[type="submit"],
+input[type="submit"],
+textarea {
+    width:300px;
+    padding:5px;
+    margin-top:5px;
+}
+.footer{
+    text-align:center;
+    padding:10px;
+    background-color: #d2b48c;
+    color:#3e2c23;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+         <img src="https://tse3.mm.bing.net/th?id=OIP.XaZzKYVw-1kH57h6FUPqZwAAAA&pid=Api&P=0&h=180" alt="javajam Logo" class="logo">
+          <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Jobs</a></li>
+         </nav>
+        </aside>
+        <main class="content">
+          <h1 class="h1 content">JavaJam Coffee House</h1>
+          <h2>Jobs at JavaJam</h2>
+          <p>Want to work at javajam ? Fill out the form below to start your application <br>
+             Required fields are marked with an asterisk(*).</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="mail" required><br>
+
+                    <label for="experience">Experience:</label>
+                    <input type="text" id="experience" name="experience" required><br>
+
+                    <textarea id="experience" name="experience" rows="4" cols="40" required></textarea> <br>
+
+                    <input type="submit" value="apply now">
+                </form>
+        
+        </main>
+    </div>
+    <footer>
+        <p>&copy; JavaJam Coffee House</p>
+    </footer>
+</body>
+</html>
