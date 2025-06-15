@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        div{
+            background:linear-gradient(red,yellow,blue);
+            color:white;
+            padding:25px;
+            text-align:center;
+        }
+        div>button{
+            border-width:2px;
+            border-radius:2px;
+            border-style:solid;
+
+        }
+        div>button:hover{
+            cursor:pointer;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="one">hi brother...press on click here </h1>
+        <button onclick='click()'>click here</button>
+    </div>
+    <script>
+        function click()
+        {
+            let h1tag=document.getElementById('one');
+            console.log(h1tag.textContent);
+            h1tag.textContent="Good morning";
+        }
+
+    </script>
+</body>
+</html>

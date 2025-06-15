@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+       div>button:hover {
+           cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="home()">Homepage</button>
+        <button onclick="Course()">Course Page</button>
+        <button onclick="About()">About page</button>
+    </div>
+
+    <script>
+        function home()
+        {
+            document.title="HOME PAGE";
+        }
+        function Course()
+        {
+            document.title="COURSE PAGE";
+        }
+        function About()
+        {
+            document.title="ABOUT PAGE";
+        }
+    </script>
+</body>
+</html>

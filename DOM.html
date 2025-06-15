@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        button{
+            background-color:blue;
+            color:white;
+            border:0px;
+        }
+        div>button:hover{
+            cursor:pointer;
+        }
+
+        
+        div{
+             background-color: yellow;
+             color:red;
+             text-align:center;
+             padding:10px 15px;
+             
+        }
+    </style>
+</head>
+<body>
+    <div>
+         <h1 id="one">Print Msg</h1>
+         <button onclick='printMsg()'>Click Here</button>
+    </div>
+    <script>
+        function  printMsg()
+        {
+            
+          let h1tag=document.getElementById('one');
+
+          console.log(h1tag.textContent);
+          h1tag.textContent="I LOVE JAVASCRIPT";
+
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

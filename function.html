@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function main() //function declaration
+        {
+            console.log('starts');
+            console.log('ends');
+        }
+        main();
+
+        let fun1=function() //function expression
+        {
+            console.log('m1 starts')
+            console.log('m2 ends')
+        };
+        fun1();
+        console.log(fun1);
+        
+        let f1=()=>  //arrow functions
+        {
+            console.log('arrows functions starts');
+            console.log('arrow functions ends')
+        }
+        f1();
+        (function()
+        {
+            console.log('iife immediate invoke function expression');
+        })();
+        
+
+
+    </script>
+</head>
+<body>
+    <h1>function is a set of statements which is used to perform specific task.</h1>
+    
+    
+</body>
+</html>

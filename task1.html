@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+        }
+       nav>h1{
+        background-color:green;
+        text-align:center;
+       }
+       .card-section{
+        margin:20px;
+       }
+       .card{
+        box-shadow:0 0 10px green;
+        margin:20px;
+        width:300px;
+        height:200px;
+        border-radius:20px;
+       }
+       .card-section>.card>img{
+        width:inherit;
+        height:inherit;
+        border-radius:o=inherit;
+       }
+       .card-data{
+        margin-top:8px;-
+        text-align:left;
+       }
+    </style>
+    <link rel="stylesheet" href=".">
+</head>
+<body>
+    <nav>
+        <h1>Mani's Biryani</h1>
+    </nav>
+    <section class="card-section">
+         <div class="card">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.k4xC3lQs22-ibkUtKVCYVAHaFj&pid=Api&P=0&h=180" alt="image not found">
+         </div>
+
+         <div class="card-data">
+            <h2>mani 's Biryani</h2>
+            <p>This biryani comes with two pieces of chicken,raitha,gravy</p>
+            <h3>349.00</h3>
+            <h4>
+                <i class="fa fa-minus-circle" id="minus" onclick="dec()"></i>
+                <span id="qty-ele"></span>
+                <i class="'fa fa-plus-circle" id="plus" onclick="inc()"></i>
+            </h4>
+
+         </div>
+    </section>
+    
+</body>
+</html>
